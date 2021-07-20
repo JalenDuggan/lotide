@@ -8,12 +8,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const tail = function (array) {
+const tail = function(array) {
   if (array.length === 1 || array === []) {
     return [];
   }
   
-  console.log(words.length);
+  
   let tailArray = array.slice(1);
   return tailArray;
 };

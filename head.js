@@ -3,10 +3,19 @@ const assertEqual = function(actual, expected) {
   const x = String.fromCodePoint(0x274c);
   if (actual === expected) {
     return console.log(`${check} ${check} ${check} Assertion Passed: [actual] === [expected]`);
-  } else {
+  }
+  if (actual !== expected) {
     return console.log(`${x} ${x} ${x} Assertion Failed: [actual] !== [expected] `);
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+const head = function(array) {
+  if (array === []) {
+    return ("undefined");
+  }
+  return array[0];
+
+};
+
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");

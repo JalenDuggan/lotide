@@ -55,11 +55,14 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 
-const test = letterPositions("lighthouse in the house");
 
-assertArraysEqual(test["i"], [ 1, 11 ]);
-assertArraysEqual(letterPositions("Lighthouse in the house").e, [9, 16, 22]);
+
+// const test = letterPositions("lighthouse in the house");
+
+// assertArraysEqual(test["i"], [ 1, 11 ]);
+// assertArraysEqual(letterPositions("Lighthouse in the house").e, [9, 16, 22]);
 
 
 

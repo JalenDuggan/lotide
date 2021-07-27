@@ -25,6 +25,9 @@ const countLetters = function (string) {
 }
 
 
-const letCount = countLetters('LHL')
+// const letCount = countLetters('LHL')
 
-assertEqual(letCount["L"], 2);
+// assertEqual(letCount["L"], 2);
+
+module.exports = countLetters;
+
